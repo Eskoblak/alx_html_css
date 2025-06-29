@@ -1,0 +1,102 @@
+css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Main icon container */
+.icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Individual icon box */
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon styling */
+.icon-box i {
+  font-size: 40px;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+/* Text styling */
+.icon-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.icon-box p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icon-section {
+    gap: 25px;
+  }
+  .icon-box {
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-section {
+    gap: 20px;
+  }
+  .icon-box {
+    width: 120px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-section {
+    gap: 15px;
+  }
+  .icon-box {
+    width: 100px;
+  }
+  .icon-box i {
+    font-size: 30px;
+  }
+}

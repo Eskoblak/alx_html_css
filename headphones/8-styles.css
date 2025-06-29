@@ -1,0 +1,142 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center;  
+    margin: 0;
+  font-family: sans-serif;
+
+
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a:active {
+            color: #FF6565;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #d10e0e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        
+        .btn:hover,
+        .btn:active {
+            opacity: 0.9;
+        }
+        
+        
+        .hero {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .hero {
+                padding: 30px 0;
+            }
+            
+            
+        }
+
+
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #444;
+  position: absolute;
+  top: 60px;
+  left: -200px;  /* Hide off screen */
+  width: 200px;
+  transition: left 0.3s ease;
+}
+
+.nav-links li {
+  border-bottom: 1px solid #555;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links.show {
+  left: 0;  /* Slide in */
+}
